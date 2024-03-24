@@ -11,6 +11,7 @@ public class Interactable : MonoBehaviour, IInteractable
 
     public bool Interact(){
         OnInteract.Invoke();
+        DestroySelf();
         return true;
     }
 
